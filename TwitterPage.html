@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Twitter.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <div>
+                <div class="logo">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <nav>
+                    <div class="nav-item">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </div>
+                    <div class="nav-item">
+                        <i class="fas fa-search"></i>
+                        <span>Explore</span>
+                    </div>
+                    <div class="nav-item">
+                        <i class="far fa-bell"></i>
+                        <span>Notifications</span>
+                    </div>
+                    <div class="nav-item">
+                        <i class="far fa-envelope"></i>
+                        <span>Messages</span>
+                    </div>
+                    <div class="nav-item">
+                        <i class="far fa-bookmark"></i>
+                        <span>Bookmarks</span>
+                    </div>
+                    <div class="nav-item">
+                        <i class="far fa-user"></i>
+                        <span>Profile</span>
+                    </div>
+                    <button class="tweet-btn">
+                        <span>Tweet</span>
+                    </button>
+                </nav>
+            </div>
+            <div class="profile-section">
+                <img src="./images/img.png" alt="Profile">
+                <div class="profile-info">
+                    <span>Ange Marie</span>
+                    <span class="username">@angemarie-decoder</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header">
+                <h2>Home</h2>
+            </div>
+            <div class="tabs">
+                <button class="tab-item active">For you</button>
+                <button class="tab-item">Following</button>
+            </div>
+            <div class="compose-tweet">
+                <div class="profile-pic"></div>
+                <div class="compose-input">
+                    <textarea placeholder="What's happening?" rows="3"></textarea>
+                    <div class="tweet-actions">
+                        <div class="tweet-actions-left">
+                            <i class="far fa-image"></i>
+                            <i class="fas fa-film"></i>
+                            <i class="far fa-chart-bar"></i>
+                            <i class="far fa-smile"></i>
+                            <i class="far fa-calendar"></i>
+                        </div>
+                        <button class="tweet-btn" style="width: 80px;">
+                            <span>Tweet</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search Twitter">
+            </div>
+            <div class="trends">
+                <h2>Trends for you</h2>
+                <div class="trend-item">
+                    <small>Trending in Technology</small>
+                    <h3>#OpenAI</h3>
+                    <small>120K Tweets</small>
+                </div>
+                <div class="trend-item">
+                    <small>Trending in Politics</small>
+                    <h3>#Elections2025</h3>
+                    <small>85K Tweets</small>
+                </div>
+                <div class="trend-item">
+                    <small>Trending in Sports</small>
+                    <h3>#FootballFinal</h3>
+                    <small>300K Tweets</small>
+                </div>
+                <div class="trend-item">
+                    <small>Trending in Entertainment</small>
+                    <h3>#NewMovieRelease</h3>
+                    <small>200K Tweets</small>
+                </div>
+                <div class="trend-item">
+                    <small>Trending in Science</small>
+                    <h3>#MarsMission2025</h3>
+                    <small>95K Tweets</small>
+                </div>
+            </div>
+
+            <!-- Who to Follow -->
+            <div class="who-to-follow">
+                <h2>Who to follow</h2>
+                <div class="follow-item">
+                    <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Profile Picture">
+                    <div class="follow-info">
+                        <span>John Doe</span>
+                        <span class="username">@johndoe</span>
+                    </div>
+                </div>
+                <div class="follow-item">
+                    <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Profile Picture">
+                    <div class="follow-info">
+                        <span>Jane Smith</span>
+                        <span class="username">@janesmith</span>
+                    </div>
+                </div>
+                <div class="follow-item">
+                    <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Profile Picture">
+                    <div class="follow-info">
+                        <span>Robert Brown</span>
+                        <span class="username">@robertbrown</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

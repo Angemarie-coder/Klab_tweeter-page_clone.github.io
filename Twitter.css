@@ -1,0 +1,359 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 275px auto 350px;
+            gap: 20px;
+        }
+
+        /* Left Sidebar */
+        .sidebar {
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 2rem;
+            color: #1d9bf0;
+            margin-bottom: 30px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-bottom: 5px;
+        }
+
+        .nav-item:hover {
+            background-color: #181818;
+        }
+
+        .nav-item i {
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+
+        .nav-item span {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .tweet-btn {
+            background-color: #1d9bf0;
+            color: #fff;
+            border: none;
+            padding: 15px 0;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .tweet-btn:hover {
+            background-color: #1a8cd8;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .profile-section img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .profile-section .profile-info {
+            font-size: 0.9rem;
+        }
+
+        .profile-section .profile-info span {
+            display: block;
+        }
+
+        .profile-section .profile-info .username {
+            color: #71767b;
+        }
+
+        /* Main Content */
+        .main-content {
+            border-left: 1px solid #2f3336;
+            border-right: 1px solid #2f3336;
+        }
+
+        .header {
+            padding: 15px 20px;
+            border-bottom: 1px solid #2f3336;
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(12px);
+            z-index: 10;
+        }
+
+        .header h2 {
+            font-size: 1.5rem;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+
+        .tab-item {
+            background: transparent;
+            border: none;
+            color: #fff;
+            padding: 10px 15px;
+            padding-left: 70px;
+            padding-right: 70px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .tab-item:hover {
+            color: #1d9bf0;
+        }
+
+        .tab-item.active {
+            border-bottom: 3px solid #1d9bf0;
+        }
+
+        .compose-tweet {
+            padding: 20px;
+            border-bottom: 1px solid #2f3336;
+            display: flex;
+            gap: 15px;
+        }
+
+        .profile-pic {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #333;
+        }
+
+        .compose-input {
+            flex: 1;
+        }
+
+        .compose-input textarea {
+            width: 100%;
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-size: 1.2rem;
+            resize: none;
+            padding: 10px 0;
+        }
+
+        .compose-input textarea::placeholder {
+            color: #71767b;
+        }
+
+        .tweet-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            border-top: 1px solid #2f3336;
+            padding-top: 15px;
+        }
+
+        .tweet-actions-left i {
+            color: #1d9bf0;
+            margin-right: 15px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .tweet-actions-left i:hover {
+            color: #1a8cd8;
+        }
+
+        /* Right Sidebar */
+        .right-sidebar {
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .search-box {
+            background-color: #202327;
+            padding: 12px 20px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box i {
+            color: #71767b;
+            margin-right: 10px;
+        }
+
+        .search-box input {
+            background: transparent;
+            border: none;
+            color: #fff;
+            width: 100%;
+        }
+
+        .trends {
+            background-color: #202327;
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        .trends h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .trend-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #2f3336;
+        }
+
+        .trend-item:last-child {
+            border-bottom: none;
+        }
+
+        .trend-item small {
+            color: #71767b;
+            display: block;
+        }
+
+        .trend-item h3 {
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+
+        .trend-item:hover {
+            background-color: #181818;
+            cursor: pointer;
+        }
+
+        /* Who to Follow */
+        .who-to-follow {
+            background-color: #202327;
+            border-radius: 15px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .who-to-follow h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .follow-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #2f3336;
+        }
+
+        .follow-item:last-child {
+            border-bottom: none;
+        }
+
+        .follow-item img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .follow-item .follow-info {
+            font-size: 0.9rem;
+        }
+
+        .follow-item .follow-info span {
+            display: block;
+        }
+
+        .follow-item .follow-info .username {
+            color: #71767b;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: 88px auto 350px;
+            }
+
+            .nav-item span {
+                display: none;
+            }
+
+            .tweet-btn {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .tweet-btn span {
+                display: none;
+            }
+
+            .tweet-btn::after {
+                content: '+';
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 850px) {
+            .container {
+                grid-template-columns: 88px auto;
+            }
+
+            .right-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                display: none;
+            }
+        }
